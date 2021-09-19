@@ -14,9 +14,9 @@ Within the scala media compartment of the human cochlea resides the organ of Cor
 #### 2. Perform mechanical response calculations
   * The Response Calculations section outlines the physical relationships underlying the
 various actors involved in the system. In order, calculations are performed for mechanical impedance Z, mechanical admittance Y, pressure P, velocity V, and displacement X.
-  * ![](./images/eqs1-5..png)
+  * ![](./images/eqs1-5.png)
   * The real and imaginary for each physical component were calculated, denoted by subscript r and i, respectively. The amplitude and phase for each physical component was also calculated, denoted by a subscript a and p, respectively. The matlab functions abs, angle, real, and imag were used to calculate the amplitude, phase, real part, and imaginary part, respectively, for Z and Y. For P, V, and X, however, the amplitude and phase equations are derived mathematically.
-  * ![](./images/eqs6-11..png)
+  * ![](./images/eqs6-11.png)
   * Equation 7 features division by 2𝛑; this operation is performed to unwrap the phase into cycles. Equation 11 calculates the phase of displacement based on that of velocity using the known relationship between the phase of sin and cos waves, which is +𝛑/2.
 
 #### 3. Plot characteristic curves
