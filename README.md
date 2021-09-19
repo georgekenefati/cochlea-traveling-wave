@@ -9,7 +9,6 @@ Within the scala media compartment of the human cochlea resides the organ of Cor
 #### 1. Set parameters 
   * In every simulation, the maximal heat produced during reaches an equilibrium. However, the heat traces in the second experiment (varied shortening loads) require varied times to reach equilibrium.
   * The Parameter Controls section defines the conditions necessary for creating a pure-tone sinusoidal stimulus as well as the physical characteristics guiding the response of the basilar membrane (BM) motion, namely ρ, the density of the cochlear fluid; m, the unit mass of the BM; s, the unit stiffness of the BM; and r, the unit resistance of the BM (obtained experimentally). When the entire program is run, the first line of the Parameters Control section asks the user for the desired frequency to simulate. The range of frequencies for normal human speech is approximately 2000-4000 Hz. Therefore, 2000 Hz and 4000 Hz were used to create the included plots.
-  * ![](./images/7B_hill.png)
 
 #### 2. Perform mechanical response calculations
   * The Response Calculations section outlines the physical relationships underlying the
@@ -34,7 +33,7 @@ various actors involved in the system. In order, calculations are performed for 
   * ![](./images/stim_p-response.png) The pressure response with stimulus enhancement enabled. In the pressure plots, there is only a visible increase in magnitude on the amplitude response. This is possibly due to the fact that the enhancement occurs locally at the organ of Corti and is not as apparent holistically when viewed from the pressure changes in the cochlear fluids.
 
 #### 3c. Cochlear implant
-  * The cochlear implant simulation was achieved by increasing the effective stiffness of the BM over a short distance starting at the base of the cochlea. The STANDARD and FLEXSOFT electrode arrays from MED-EL are 31.5 mm in length [1](https://doi.org/10.1016/j.heares.2017.10.005). In my implementation, a “short” electrode array was simulated resulting in a stiffness increase over a span of approximately 10mm, about one third of the length of the MED-EL electrode array.
+  * The cochlear implant simulation was achieved by increasing the effective stiffness of the BM over a short distance starting at the base of the cochlea. The STANDARD and FLEXSOFT electrode arrays from MED-EL are 31.5 mm in length [[1]](https://doi.org/10.1016/j.heares.2017.10.005). In my implementation, a “short” electrode array was simulated resulting in a stiffness increase over a span of approximately 10mm, about one third of the length of the MED-EL electrode array.
   * ![](./images/implant_impedance.png) The real and imaginary parts of the mechanical impedance in the presence of the simulated implant. At the start of the plot there is a very sharp increase in the magnitude of the imaginary component while the real component remains near zero until very close to the apex.
   * ![](./images/implant_vel-response.png) The amplitude and phase of the velocity response in the presence of the simulated implant. At the start of the plot there is a sharp increase in the magnitude of the velocity amplitude.
   *  ![](./images/implant_p-response.png)The amplitude and phase of the pressure response in the presence of the simulated implant. The pressure amplitude and phase seem relatively unchanged by the presence of the implant.
