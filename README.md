@@ -3,7 +3,7 @@
 Within the scala media compartment of the human cochlea resides the organ of Corti. This sensory tissue contains various microstructures, namely the outer and inner hair cells, which act to amplify sound and transduce sound energy, respectively. Driven by the motion of the stapes bone, the 'traveling wave' is the interaction between the mass of the cochlear fluid and the stiffness of the organ of Corti. The interaction is referred to as 'tonotopic tuning'- as the stimulus frequency decreases, the peak of the response shifts further towards the apex of the cochlea. This script models the basic behavior of tonotopic tuning as seen in *in vivo* studies of the human cochlea.
 
 ## Requirements
-#### * MATLAB 
+* MATLAB 
 
 ## Pipeline
 #### 1. Set parameters 
@@ -67,7 +67,7 @@ The overall performance of my implementation is successful in modeling the propo
   * BM mass equal to zero ![](./images/BM-mass_mod.png)
   * BM resistance * 1/10 ![](./images/BM-resistance_mod.png)
   * BM stiffness * 10 ![](./images/BM-resistance_mod.png)
-  * With a stimulus frequency of 2000 Hz, there are quite a few differences between the plots modifying m, r, and s respectively. Firstly, it is apparent that a wave is able to propagate across the BM even if it is massless. This is unexpected and may indicate that the stiffness and resistance of the BM are sufficient to support a tuned response. This may not be surprising, however, as the structures in the cochlea are close to massless by design and could impair hearing otherwise. The response when resistance is decreased by a factor of 10 shows an earlier peak (emulating the response of a higher frequency) and oscillates more. The response when stiffness is increased by a factor of 10, however, shows a later peak with fewer oscillations, a contrast to the previous modification.\
+  * With a stimulus frequency of 2000 Hz, there are quite a few differences between the plots modifying m, r, and s respectively. Firstly, it is apparent that a wave is able to propagate across the BM even if it is massless. This is unexpected and may indicate that the stiffness and resistance of the BM are sufficient to support a tuned response. This may not be surprising, however, as the structures in the cochlea are close to massless by design and could impair hearing otherwise. The response when resistance is decreased by a factor of 10 shows an earlier peak (emulating the response of a higher frequency) and oscillates more. The response when stiffness is increased by a factor of 10, however, shows a later peak with fewer oscillations, a contrast to the previous modification.
 
 
 ## Acknowledgements
